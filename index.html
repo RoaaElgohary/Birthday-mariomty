@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ff4f9a">
+  <title>Birthday Mariomyy 💗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+  <div id="passwordGate" class="password-gate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+    <div class="gate-glow"></div>
+    <div class="gate-card glass">
+      <div class="gate-icon">🔐</div>
+      <span class="eyebrow"> ACCESS REQUIRED</span>
+      <h1 id="gateTitle">Wait... the celebration is <span>locked.</span> 🎀</h1>
+      <p class="gate-subtitle">Two secret codes. One exact order.<br>Get them both right to unlock the surprise.</p>
+
+      <div class="gate-progress" aria-label="Password progress">
+        <span class="gate-step active" id="step1">01</span>
+        <i></i>
+        <span class="gate-step" id="step2">02</span>
+      </div>
+
+      <form id="passwordForm" autocomplete="off">
+        <label for="passwordInput" id="passwordLabel">Enter Secret Password #1</label>
+        <div class="password-wrap">
+          <input id="passwordInput" type="password" inputmode="numeric" placeholder="DD/MM/YYYY" maxlength="10" aria-describedby="gateMessage" autofocus>
+          <button type="button" id="togglePassword" aria-label="Show password">👁</button>
+        </div>
+        <button class="primary unlock-btn" type="submit">UNLOCK THE SURPRISE <span>→</span></button>
+        <p id="gateMessage" class="gate-message" aria-live="polite">Hint: the order matters. 😉</p>
+      </form>
+    </div>
+  </div>
+  <div class="noise"></div>
+  <div id="hearts"></div>
+
+  <main>
+    <section class="hero">
+      <div class="terminal glass">
+        <div class="terminal-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="terminal-title">birthday.exe</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="pink">const</span> birthdayGirl = <span class="string">"Mariam"</span>;</p>
+          <p><span class="pink">const</span> friendship = <span class="string">"FOREVER"</span>;</p>
+          <p><span class="pink">return</span> <span class="string">"The best memories are still loading..."</span> ✨</p>
+          <div class="progress"><span></span></div>
+          <p class="ready">✓ surprise.ready = true;</p>
+        </div>
+      </div>
+
+      <div class="hero-copy">
+        <span class="eyebrow">A little program made with love</span>
+        <h1>Happy Birthday,<br><span>Romii</span> 💗</h1>
+        <p class="subtitle">Some friendships deserve their own website.</p>
+        <button class="primary" id="startBtn">RUN THE SURPRISE <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="section intro" id="surprise">
+      <h2>Today, the code is all about <em>you.</em></h2>
+      <p class="lead">I could’ve made your birthday a normal one, but my engineer deserves all the effort… and all the errors.
+                      I know a programmer, so why not turn her birthday into a whole project</p>
+      <div class="code-card glass">
+        <div class="code-line"><span>const</span> <b>you</b> = {</div>
+        <div class="code-line indent">kindness: <i>"∞"</i>,</div>
+        <div class="code-line indent">laughs: <i>"∞"</i>,</div>
+        <div class="code-line indent">memories: <i>"∞"</i>,</div>
+        <div class="code-line indent">support: <strong>true</strong>,</div>
+        <div class="code-line indent">friendship: <i>"forever"</i></div>
+        <div class="code-line">};</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>A folder filled with our<em> memories.</em> 📸</h2>
+       <div class="gallery">
+        <figure><img src="img/img 1.jpg" alt="Memory 1"><figcaption>Memory_01</figcaption></figure>
+        <figure><img src="img/img2.jpg" alt="Memory 2"><figcaption>Memory_02</figcaption></figure>
+        <figure><img src="img/img5.jpg" alt="Memory 3"><figcaption>Memory_03</figcaption></figure>
+        <figure><img src="img/img4.jpg" alt="Memory 4"><figcaption>Memory_04</figcaption></figure>
+        <figure><img src="img/img3.jpg" alt="Memory 4"><figcaption>Memory_05</figcaption></figure>
+        <figure><img src="img/img6.jpg" alt="Memory 4"><figcaption>Memory_06</figcaption></figure>
+        <figure><img src="img/img7.jpg" alt="Memory 4"><figcaption>Memory_07</figcaption></figure>
+        <figure><img src="img/img8.jpg" alt="Memory 4"><figcaption>Memory_08</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section message-section">
+      <div class="message-card glass">
+        <div class="spark">✦</div>
+        <h2>A message I couldn't put in a text.</h2>
+        <p id="typedMessage"></p>
+        <span class="cursor">|</span>
+      </div>
+    </section>
+
+    <section class="section music-section">
+      <h2>Press play. This one's for <em>you.</em> 🎧</h2>
+      <div class="music-card glass">
+        <div class="album">♫</div>
+        <div>
+          <span class="small">Celebrating in my own way.</span>
+          <h3 id="songName">Our favorite song.</h3>
+          <p>Put your song link in <code>script.js</code>.</p>
+        </div>
+        <a class="music-btn" id="songLink" href="#" target="_blank" rel="noopener">OPEN SONG ↗</a>
+      </div>
+    </section>
+
+    <section class="section final-section">
+      <div class="final-card">
+        <div class="glow"></div>
+        <span class="eyebrow">SYSTEM MESSAGE</span>
+        <h2>Program completed.<br><span>May you always be my forever friend..</span></h2>
+        <p>Error 404: A better best friend was not found. 💗</p>
+        <button class="primary" id="heartBtn">MAKE A WISH ✨</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>made with ♡, caffeine &amp; code</span>
+    <span>birthday romii © 2026</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
